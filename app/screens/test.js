@@ -1,20 +1,17 @@
 import React from 'react';
-import { Text,View ,TextInput, TextPropTypes, TouchableOpacity} from 'react-native';
+import { Text,View ,TextInput, TextPropTypes} from 'react-native';
 
 
-const First = ({navigation}) => {
+const Test = (props) => {
   return (
     // <view>
       // <Text>Hello, I am your {num} funtion Component!</Text>
     // <Text>Total amount is {calculate("07","21","96")}</Text>
     /* </view> */
 
-    <View style={{flex:1 , justifyContent:'center',alignItems:'center'}}>
+    <View>
     {/* <Text>Hello, {props.greed}</Text> */}
-    <Text>Hello, </Text>
-    <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-      <Text>test</Text>
-    </TouchableOpacity>
+    <Text>Hello, test </Text>
     {/* <TextInput
       style={{
         height: 40,
@@ -29,4 +26,4 @@ const First = ({navigation}) => {
   );
 }
 
-export default First;
+export default Test;
